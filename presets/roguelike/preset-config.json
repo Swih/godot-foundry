@@ -1,0 +1,29 @@
+{
+  "name": "Roguelike",
+  "description": "Roguelike deckbuilder / auto-battler / score-attack template",
+  "version": "0.1.0",
+  "emphasized_agents": [
+    "systems-designer",
+    "economy-designer",
+    "game-designer",
+    "qa-tester"
+  ],
+  "deemphasized_agents": [
+    "ux-designer",
+    "performance-analyst"
+  ],
+  "extra_rules": [
+    "All item/relic effects documented with exact numbers",
+    "Scoring formulas breakdownable step-by-step",
+    "Every powerful effect needs a cost or condition",
+    "Additive bonuses common, multiplicative rare",
+    "Run simulation scripts required before balance approval"
+  ],
+  "suggested_structure": {
+    "src/gameplay/systems/": "Score manager, economy, progression",
+    "src/gameplay/entities/": "Items, relics, enemies, grid",
+    "src/gameplay/states/": "Run state machine (playing, shop, boss, game_over)",
+    "design/": "GDD, economy sheet, balance checklist",
+    "prototypes/": "Mechanic tests"
+  }
+}

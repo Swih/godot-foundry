@@ -1,0 +1,37 @@
+# Godot
+.godot/
+*.translation
+export_presets.cfg
+*.import
+
+# Keep .tres and .tscn in git
+# !*.tres
+# !*.tscn
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Claude Code local (machine-specific, not for public)
+.claude/settings.local.json
+.claude/projects/
+
+# Session artifacts
+production/session-logs/
+production/session-state/
+
+# Node (if any tooling)
+node_modules/
+
+# Build
+build/
+dist/
+export/
